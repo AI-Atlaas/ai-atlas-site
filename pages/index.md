@@ -7,4 +7,4 @@ permalink: /
 title: Jekyll Garden
 ---
 
-{% include docs/list.md %}
+{% include ../docs/list.md %}
