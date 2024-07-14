@@ -21,6 +21,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Cache Ruby gems
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -30,7 +38,8 @@ jobs:
         run: gem install bundler
 
       - name: Install Dependencies
-        run: bundle install --without development test
+        run: bundle install --jobs 4 --retry 3 --without development test
+      
 
       - name: Setup Pages
         id: pages
