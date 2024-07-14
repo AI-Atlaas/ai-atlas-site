@@ -98,6 +98,10 @@ defaults:
       content-type: notes
 
 
+include: 
+  - _includes
+  - docs
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -105,7 +109,7 @@ defaults:
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
-#
+
 exclude:
   - _notes/000 Inbox
   - _notes/200 Private
