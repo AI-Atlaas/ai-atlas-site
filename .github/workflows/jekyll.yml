@@ -37,8 +37,11 @@ jobs:
       - name: Install Bundler
         run: gem install bundler
 
+      - name: Set Bundler without development and test
+        run: bundle config set without 'development test'
+
       - name: Install Dependencies
-        run: bundle install --jobs 4 --retry 3 --without development test
+        run: bundle install
       
 
       - name: Setup Pages
