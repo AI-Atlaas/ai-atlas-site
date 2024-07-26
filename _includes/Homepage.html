@@ -2,6 +2,9 @@
     <div class="jumbo">{{site.heading}}</div>
         <!-- Include list.md content -->
             <!-- Adjust the path and file name as per your structure -->
+            {% capture markdown_content %}
             {% include_relative index.md %}
+            {% endcapture %}
+            {{ markdown_content | markdownify }}
     </div>
 </div>
