@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Hidden Note
 feed: hide
 date : 01-01-2021
@@ -8,4 +8,4 @@ Tada! You found the hidden note! This note is just like [[Welcome to the garden]
 
 ### How to handle Private notes?
 
-I would recommend using sub-folders inside `_notes` (Eg: Public and Private) and add Private to .gitignore so that Private notes won't get synced to Github. PS: Can you see the backlink to Welcome to the garden? That's backlinking! :)
+I would recommend using sub-folders inside `_notes` (Eg: Public and Private) and add Private to .gitignore so that Private notes won't get synced to Github. PS: Can you see the backlink to Welcome to the garden? That's backlinking! :) -->
